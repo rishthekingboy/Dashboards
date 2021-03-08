@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+}
+
+header,
+.header__right,
+.header__middle{
+    display: flex;
+    align-items: center;
+}
+header{
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.logo{
+    flex: 0.2;
+}
+.header__middle{
+    flex: 0.5;
+    gap: 20px;
+    color: gray;
+}
+
+.header__middleInput{
+    border: none;
+    border-bottom: 2px solid lightgray;
+    padding: 0 5px;
+    color: gray;
+}
+
+.header__middleInput:focus{
+    outline: none;
+}
+
+.header__right{
+    list-style-type: none;
+    flex: 0.3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: gray;
+}
+
+.header__right li{
+    margin-right: 20px;
+}
+
+.header__right li img{
+    border-radius: 100%;
+    border: 1px solid gray;
+}
+
+.main{
+    display: flex;
+}
+.main__left{
+    background-color: white;
+    width: 12em;
+    border: 1px solid black;
+    height: 84vh;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: rgb(65, 63, 63);
+}
+
+.main__leftBody{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.interface div, .core div {
+    color: gray;
+    font-weight: bold;
+}
+.interface, .core{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.main__right{
+    flex: 1;
+    border: 1px solid red;
+    height: 90vh;
+    background-color: rgba(228, 228, 228, 0.733);
+    z-index: -2;
+}
+
+.main__rightTitel{
+    padding: 3em 0 4em 2em;
+    color: white;
+}
+.blue{
+    background-color: blue;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 100%;
+    height: 40%;
+}
+
+.charts{
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+
+
+
+.chart{
+    flex: 0.5;
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    min-height: 40vh;
+}
+.labels{
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+}
+.label{
+    flex: 0.25;
+    min-height: 20vh;
+    background-color: gray;
+    border-radius: 0.2rem;
+}
+
